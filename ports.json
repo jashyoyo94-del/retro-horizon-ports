@@ -62,13 +62,6 @@
     "updated": "2026-11-26"
   },
   {
-    "id": "castlevania-rebirth",
-    "name": "Castlevania ReBirth Recompiled",
-    "subtitle": "Handheld port release",
-    "description": "A Castlevania ReBirth Recompiled project shared with the Retro Horizon community. Check the release notes for supported devices and setup details.",
-    "devices": [
-      "R36S",
-      "R36S Clones"
     ],
     "os": [
       "DarkOS RE",
