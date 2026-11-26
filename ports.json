@@ -1,0 +1,105 @@
+[
+  {
+    "id": "red-ball-4",
+    "name": "Red Ball 4",
+    "subtitle": "Experimental handheld port",
+    "description": "An experimental R36S port project based on the Android game. Compatibility and controls may vary.",
+    "devices": [
+      "R36S",
+      "R36S Clones"
+    ],
+    "os": [
+      "DarkOS RE"
+    ],
+    "type": "Android",
+    "status": "Experimental",
+    "version": "In development",
+    "image": "",
+    "downloadUrl": "",
+    "guideUrl": "",
+    "updated": "2026-11-26"
+  },
+  {
+    "id": "gta-iv-mobile",
+    "name": "GTA IV Mobile Edition",
+    "subtitle": "Initial launch achieved",
+    "description": "An experimental R36S project. The game has launched, while controls, display layout, performance and stability still need work.",
+    "devices": [
+      "R36S",
+      "R36S Clones"
+    ],
+    "os": [
+      "DarkOS RE",
+      "ArkOS"
+    ],
+    "type": "Android",
+    "status": "Experimental",
+    "version": "Development build",
+    "image": "",
+    "downloadUrl": "",
+    "guideUrl": "",
+    "updated": "2026-11-26"
+  },
+  {
+    "id": "soul-knight",
+    "name": "Soul Knight",
+    "subtitle": "Community port project",
+    "description": "A community-supported handheld port project. Check the project thread for current compatibility, controls and build information.",
+    "devices": [
+      "R36S",
+      "R36S Clones"
+    ],
+    "os": [
+      "ArkOS",
+      "DarkOS RE"
+    ],
+    "type": "Android",
+    "status": "Testing",
+    "version": "Check project updates",
+    "image": "",
+    "downloadUrl": "",
+    "guideUrl": "",
+    "updated": "2026-11-26"
+  },
+  {
+    "id": "castlevania-rebirth",
+    "name": "Castlevania ReBirth Recompiled",
+    "subtitle": "Handheld port release",
+    "description": "A Castlevania ReBirth Recompiled project shared with the Retro Horizon community. Check the release notes for supported devices and setup details.",
+    "devices": [
+      "R36S",
+      "R36S Clones"
+    ],
+    "os": [
+      "DarkOS RE",
+      "ArkOS"
+    ],
+    "type": "Linux",
+    "status": "Released",
+    "version": "See release notes",
+    "image": "",
+    "downloadUrl": "",
+    "guideUrl": "",
+    "updated": "2026-11-26"
+  },
+  {
+    "id": "ultrakill-nextos",
+    "name": "ULTRAKILL NextOS",
+    "subtitle": "Experimental NextOS project",
+    "description": "An experimental ARM/Linux handheld project. Treat as a development build and review its setup notes before trying it.",
+    "devices": [
+      "R36S",
+      "R36S Clones"
+    ],
+    "os": [
+      "NextOS"
+    ],
+    "type": "Linux",
+    "status": "Experimental",
+    "version": "Experimental",
+    "image": "",
+    "downloadUrl": "",
+    "guideUrl": "",
+    "updated": "2026-11-26"
+  }
+]
