@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7f8ff">
+<meta name="description" content="Explore the Retro Horizon handheld ports catalogue. Find ports, compatibility information and community projects.">
+<title>Retro Horizon | Ports Catalogue</title>
+<style>
+:root{--ink:#17213b;--muted:#68738c;--line:#e7eaf3;--paper:#fff;--bg:#f6f7fc;--purple:#7657ef;--blue:#4d8cff;--soft:#f0edff;--shadow:0 16px 45px rgba(40,48,90,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.06em}.logo{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--purple),var(--blue));display:grid;place-items:center;color:white;font-size:20px;box-shadow:0 8px 18px #7657ef44}.brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:.19em;margin-top:2px}
+.links{display:flex;align-items:center;gap:25px;color:#59647c;font-size:13px;font-weight:700}.links a:hover{color:var(--purple)}.join,.primary{border:0;border-radius:12px;padding:12px 17px;background:linear-gradient(110deg,var(--purple),var(--blue));color:#fff;font-weight:800;box-shadow:0 8px 18px #7657ef30}
+.hero{padding:72px 0 38px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 20%,#dfe8ff 0,transparent 36%),radial-gradient(ellipse at 5% 0%,#eee7ff 0,transparent 35%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:38px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e7e2ff;border-radius:30px;padding:8px 12px;color:#7257d9;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#36c98a;box-shadow:0 0 0 4px #36c98a22}
+h1{font-size:clamp(40px,6vw,68px);line-height:.99;letter-spacing:-.055em;margin:22px 0 18px;max-width:700px}h1 span{background:linear-gradient(100deg,var(--purple),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:16px;line-height:1.8;max-width:610px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.secondary{padding:12px 17px;border:1px solid #dfe3ef;border-radius:12px;background:white;font-weight:800;color:#4d5872}
+.feature{background:#fff;border:1px solid #e8eaf3;border-radius:24px;padding:22px;box-shadow:var(--shadow);transform:rotate(1deg)}.feature-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.12em}.feature-art{height:155px;border-radius:17px;margin:18px 0;background:radial-gradient(circle at 70% 25%,#a9c4ff,transparent 25%),linear-gradient(135deg,#27205b,#7861e9 60%,#70b8ff);display:grid;place-items:center;color:white;font-size:62px;position:relative;overflow:hidden}.feature-art:after{content:"";position:absolute;width:210px;height:210px;border:1px solid #ffffff44;border-radius:50%;right:-45px;top:-80px;box-shadow:0 0 0 25px #ffffff0b,0 0 0 50px #ffffff0b}.feature h3{margin:0 0 7px;font-size:21px}.feature p{font-size:13px;margin:0;line-height:1.6}
+main{padding:38px 0 80px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}.kicker{font-size:11px;font-weight:900;letter-spacing:.15em;color:var(--purple);text-transform:uppercase}.section-head h2{font-size:32px;letter-spacing:-.04em;margin:7px 0 0}.section-head p{margin:0;color:var(--muted);font-size:13px}
+.toolbar{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:0 8px 24px #27335b08;margin-bottom:22px}.searchrow{display:grid;grid-template-columns:1fr auto;gap:10px}.searchbox{display:flex;align-items:center;gap:10px;background:#f7f8fc;border:1px solid #edf0f6;border-radius:12px;padding:0 14px}.searchbox input{width:100%;border:0;outline:0;background:transparent;padding:14px 0;color:var(--ink);font:inherit}.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}.filters select{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 12px;color:#58637c;font:inherit;font-size:12px;outline:none}
+.count{font-size:12px;color:var(--muted);margin:17px 2px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.2s;box-shadow:0 8px 22px #27335b07}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#d9d1ff}.cover{height:132px;display:flex;align-items:center;justify-content:center;font-size:43px;color:#fff;background:linear-gradient(135deg,#29235e,#795de9 65%,#75b9ff);position:relative}.cover:before,.cover:after{content:"";position:absolute;border:1px solid #ffffff44;border-radius:50%;width:170px;height:170px;right:-35px;top:-95px}.cover:after{width:110px;height:110px;right:40px;top:55px}.cover span{z-index:1;text-shadow:0 5px 15px #1115}.card-body{padding:17px}.card-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}.tag{font-size:10px;font-weight:900;letter-spacing:.05em;border-radius:30px;padding:6px 9px;background:#f0edff;color:#6e55d6}.status{font-size:10px;font-weight:800;color:#a66b13;background:#fff4df;border-radius:30px;padding:6px 9px}.status.released{color:#16845b;background:#e7f8f0}.status.testing{color:#356fc4;background:#eaf2ff}.card h3{font-size:18px;margin:0 0 5px}.subtitle{font-size:11px;color:#8a93a8;margin-bottom:10px}.desc{font-size:12px;color:var(--muted);line-height:1.65;min-height:58px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:13px 0}.chip{font-size:10px;color:#66718a;background:#f4f5f9;padding:5px 8px;border-radius:7px}.card-foot{border-top:1px solid #f0f1f6;padding-top:12px;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#8992a6}.card-foot a{font-weight:800;color:var(--purple)}.empty{grid-column:1/-1;text-align:center;background:white;border:1px dashed #d9deeb;border-radius:16px;padding:45px 15px;color:var(--muted)}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:65px}.info{background:white;border:1px solid var(--line);border-radius:17px;padding:20px}.info .ico{width:38px;height:38px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:18px}.info h3{font-size:15px;margin:13px 0 7px}.info p{font-size:12px;line-height:1.65;color:var(--muted);margin:0}
+.cta{margin-top:55px;padding:30px;border-radius:22px;background:linear-gradient(110deg,#28215d,#6d57dc 60%,#4c91e9);color:white;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{font-size:25px;margin:0 0 7px}.cta p{margin:0;color:#e0e4ff;font-size:13px}.cta a{background:white;color:#5e4ac5;padding:12px 16px;border-radius:11px;font-size:12px;font-weight:900;white-space:nowrap}
+footer{border-top:1px solid var(--line);background:#fff;padding:24px 0;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.feature{max-width:470px;transform:none}.grid{grid-template-columns:repeat(2,1fr)}.links{gap:13px}.links a:not(.join){display:none}}
+@media(max-width:560px){.wrap{width:min(100% - 26px,1160px)}.nav{height:66px}.brand{font-size:13px}.join{padding:10px 12px;font-size:11px}.hero{padding:48px 0 28px}.hero-grid{gap:27px}h1{font-size:43px}.hero p{font-size:14px}.section-head{display:block}.section-head p{margin-top:8px}.section-head h2{font-size:27px}.searchrow{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.cover{height:145px}.info-grid{grid-template-columns:1fr;margin-top:45px}.cta{display:block;padding:24px}.cta a{display:inline-block;margin-top:18px}.feature-art{height:125px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="logo">RH</span><span>RETRO HORIZON<small>PORTS CATALOGUE</small></span></a>
+    <nav class="links">
+      <a href="#catalogue">Catalogue</a><a href="#how">How it works</a>
+      <a href="https://retrohorizon.netlify.app/" target="_blank" rel="noopener">Main website</a>
+      <a class="join" href="https://discord.gg/sFnVPsZaAM" target="_blank" rel="noopener">Join Discord ↗</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> THE HANDHELD PORTS HUB</div>
+      <h1>YOUR NEXT PORT<br><span>STARTS HERE.</span></h1>
+      <p>Discover community ports, explore handheld compatibility and find the information you need — all in one place.</p>
+      <div class="hero-actions"><a class="primary" href="#catalogue">Explore catalogue ↓</a><a class="secondary" href="https://discord.gg/sFnVPsZaAM" target="_blank" rel="noopener">Join the community</a></div>
+    </div>
+    <aside class="feature">
+      <div class="feature-top"><span>RETRO HORIZON</span><span>✦ FEATURED PROJECT</span></div>
+      <div class="feature-art"><span>🎮</span></div>
+      <h3>Community Port Library</h3>
+      <p>Ports and projects for a growing range of Linux and Android handhelds.</p>
+    </aside>
+  </div>
+</section>
+
+<main class="wrap">
+  <section id="catalogue">
+    <div class="section-head"><div><div class="kicker">Find your next game</div><h2>Ports Catalogue</h2></div><p>Search, filter and explore community projects.</p></div>
+    <div class="toolbar">
+      <div class="searchrow">
+        <label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Search games, devices, OS or keywords..." autocomplete="off"></label>
+        <button class="secondary" id="clear" type="button">Reset filters</button>
+      </div>
+      <div class="filters">
+        <select id="device"><option value="">All devices</option></select>
+        <select id="os"><option value="">All operating systems</option></select>
+        <select id="type"><option value="">All port types</option></select>
+        <select id="status"><option value="">All statuses</option></select>
+      </div>
+    </div>
+    <div class="count" id="count">Loading catalogue…</div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </section>
+
+  <section id="how" class="info-grid">
+    <article class="info"><div class="ico">🔎</div><h3>Find a port</h3><p>Search by game, handheld, operating system or project status to narrow down the catalogue.</p></article>
+    <article class="info"><div class="ico">📋</div><h3>Check compatibility</h3><p>Read each listing carefully. Experimental and testing builds may have bugs or incomplete features.</p></article>
+    <article class="info"><div class="ico">🛠️</div><h3>Contribute updates</h3><p>Port details are loaded from the repository’s ports.json file, making catalogue updates straightforward.</p></article>
+  </section>
+
+  <section class="cta">
+    <div><h2>Building something for handhelds?</h2><p>Share your port, report a problem or get help from the Retro Horizon community.</p></div>
+    <a href="https://discord.gg/sFnVPsZaAM" target="_blank" rel="noopener">VISIT RETRO HORIZON DISCORD ↗</a>
+  </section>
+</main>
+
+<footer><div class="wrap foot"><span>© 2026 Retro Horizon. Community ports catalogue.</span><span>Made for handheld gaming & development 💜</span></div></footer>
+
+<script>
+const DATA_URL = "./ports.json";
+let allPorts = [];
+const $ = id => document.getElementById(id);
+const fields = ["device","os","type","status"];
+
+function uniqueValues(key){
+  return [...new Set(allPorts.flatMap(p => Array.isArray(p[key]) ? p[key] : (p[key] ? [p[key]] : [])))].sort((a,b)=>a.localeCompare(b));
+}
+function fillSelect(id, values, label){
+  const el=$(id); el.innerHTML=`<option value="">${label}</option>`+values.map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
+}
+function escapeHtml(value){
+  return String(value ?? "").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function render(){
+  const term=$("search").value.trim().toLowerCase();
+  const selected={device:$("device").value,os:$("os").value,type:$("type").value,status:$("status").value};
+  const shown=allPorts.filter(p=>{
+    const hay=[p.name,p.subtitle,p.description,p.type,p.status,p.version,...(p.devices||[]),...(p.os||[])].join(" ").toLowerCase();
+    return (!term||hay.includes(term))
+      &&(!selected.device||(p.devices||[]).includes(selected.device))
+      &&(!selected.os||(p.os||[]).includes(selected.os))
+      &&(!selected.type||p.type===selected.type)
+      &&(!selected.status||p.status===selected.status);
+  });
+  $("count").textContent=`Showing ${shown.length} of ${allPorts.length} ports`;
+  $("grid").innerHTML=shown.length?shown.map((p,i)=>`
+    <article class="card">
+      <div class="cover"><span>${escapeHtml(p.icon||"🎮")}</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="tag">${escapeHtml(p.type||"Port")}</span><span class="status ${(p.status||"").toLowerCase()}">${escapeHtml(p.status||"Unspecified")}</span></div>
+        <h3>${escapeHtml(p.name)}</h3>
+        <div class="subtitle">${escapeHtml(p.subtitle||"Community project")}</div>
+        <div class="desc">${escapeHtml(p.description||"No description provided yet.")}</div>
+        <div class="chips">${[...(p.devices||[]),...(p.os||[])].slice(0,5).map(x=>`<span class="chip">${escapeHtml(x)}</span>`).join("")}</div>
+        <div class="card-foot"><span>${escapeHtml(p.version||"Version not specified")}</span>${p.downloadUrl?`<a href="${escapeHtml(p.downloadUrl)}" target="_blank" rel="noopener">Downloads ↗</a>`:p.guideUrl?`<a href="${escapeHtml(p.guideUrl)}" target="_blank" rel="noopener">View guide ↗</a>`:`<span>Details coming soon</span>`}</div>
+      </div>
+    </article>`).join(""):`<div class="empty"><strong>No ports found.</strong><br>Try another search or reset your filters.</div>`;
+}
+async function loadPorts(){
+  try{
+    const response=await fetch(DATA_URL,{cache:"no-store"});
+    if(!response.ok) throw new Error("Could not load ports.json");
+    const data=await response.json();
+    if(!Array.isArray(data)) throw new Error("ports.json must contain a JSON array");
+    allPorts=data;
+    fillSelect("device",uniqueValues("devices"),"All devices");
+    fillSelect("os",uniqueValues("os"),"All operating systems");
+    fillSelect("type",uniqueValues("type"),"All port types");
+    fillSelect("status",uniqueValues("status"),"All statuses");
+    render();
+  }catch(error){
+    $("count").textContent="Catalogue data could not be loaded.";
+    $("grid").innerHTML='<div class="empty"><strong>Could not load ports.json.</strong><br>Make sure index.html and ports.json are uploaded into the same folder and open the site through Netlify or GitHub Pages.</div>';
+    console.error(error);
+  }
+}
+$("search").addEventListener("input",render);
+fields.forEach(id=>$(id).addEventListener("change",render));
+$("clear").addEventListener("click",()=>{$("search").value="";fields.forEach(id=>$(id).value="");render();});
+loadPorts();
+</script>
+</body>
+</html>
